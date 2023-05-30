@@ -32,7 +32,7 @@ These commands will create four sample Deployments with different images.
 
 After you have created the Deployments, you will need to create Services for each of them. Run the following commands to create the Services:
 
-> `kubectl expose deploy sample-1 --type=ClusterIP --port=3000
+ `kubectl expose deploy sample-1 --type=ClusterIP --port=3000
 kubectl expose deploy sample-2 --type=ClusterIP --port=3000
 kubectl expose deploy sample-3 --type=ClusterIP --port=3000
 kubectl expose deploy sample-4 --type=ClusterIP --port=3000`
