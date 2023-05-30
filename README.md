@@ -16,14 +16,14 @@ This will deploy the nginx-ingress controller as a Deployment in your cluster.
 Next, you will need to create some sample Deployments to route traffic to. Run the following commands to create the 
 Deployments:
 
-1st 
-> `kubectl create deploy sample-1 --image=devopsprosamples/next-path-sample-1`
-2nd 
-> `kubectl create deploy sample-2 --image=devopsprosamples/next-path-sample-2`
-3rd
-> `kubectl create deploy sample-3 --image=devopsprosamples/next-sample-1`
-4th
-> `kubectl create deploy sample-4 --image=devopsprosamples/next-sample-2
+
+ `kubectl create deploy sample-1 --image=devopsprosamples/next-path-sample-1`
+
+ `kubectl create deploy sample-2 --image=devopsprosamples/next-path-sample-2`
+
+`kubectl create deploy sample-3 --image=devopsprosamples/next-sample-1`
+
+ `kubectl create deploy sample-4 --image=devopsprosamples/next-sample-2
 `
 
 These commands will create four sample Deployments with different images.
