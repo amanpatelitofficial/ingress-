@@ -46,7 +46,7 @@ These commands will create four Services with ClusterIP type for each of the sam
 
 Now that you have created the Services, you can create an Ingress resource to route traffic to them based on different paths. To create the Ingress resource, run the following command:
 
- `kubectl apply -f ingress-resource.yaml`
+ `kubectl apply -f ingress.yaml`
 
 
 This will create an Ingress resource with rules to route traffic to the sample Services based on different paths.
