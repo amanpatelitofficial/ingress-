@@ -33,8 +33,11 @@ These commands will create four sample Deployments with different images.
 After you have created the Deployments, you will need to create Services for each of them. Run the following commands to create the Services:
 
 `kubectl expose deploy sample-1 --type=ClusterIP --port=3000`
+
 `kubectl expose deploy sample-2 --type=ClusterIP --port=3000`
+
 `kubectl expose deploy sample-3 --type=ClusterIP --port=3000`
+
 `kubectl expose deploy sample-4 --type=ClusterIP --port=3000`
 
 These commands will create four Services with ClusterIP type for each of the sample Deployments.
@@ -61,6 +64,7 @@ This will install the cert-manager as a Deployment in your cluster.
 After you have installed the cert-manager, you can create a Clusterissuer to issue SSL certificates for your Ingress. Run the following commands to create the staging and production Clusterissuers:
 
 `kubectl apply -f staging_issuer.yaml`
+
 `kubectl apply -f prod_issuer.yaml`
 
 # Other Commands
@@ -68,18 +72,31 @@ After you have installed the cert-manager, you can create a Clusterissuer to iss
 Here are some other useful commands to help you manage your Kubernetes cluster:
 
 To view deployments
+
 `kubectl get deploy`
+
 To view services
+
  `kubectl get svc`
+ 
 To view ingress
+
  `kubectl get ing`
+ 
 To describe ingress
+
 `kubectl describe ing <ing-name>`
+
 To view clusterissuer
+
 `kubectl get clusterissuer`
+
 To view certificate
-> `kubectl get certificate`
+
+`kubectl get certificate`
+
 To describe certificate
+
 `kubectl describe certificate`
 
 
